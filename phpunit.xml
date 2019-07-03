@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        bootstrap="src/bootstrap.php"
+        colors="true"
+        convertWarningsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertErrorsToExceptions="true"
+        >
+
+    <php>
+        <ini name="xdebug.scream" value="Off"/>
+    </php>
+
+    <testsuites>
+        <testsuite name="JWT test">
+            <directory suffix="Test.php">test</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
